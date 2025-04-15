@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { TrackModel } from '@core/models/Track.model';
 
 @Component({
   selector: 'app-section-generic',
@@ -7,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './section-generic.component.css'
 })
 export class SectionGenericComponent {
+  @Input() title: string = '';
+  @Input() mode: 'small' | 'big' = 'big';
+  @Input() dataTracks: Array<TrackModel> = [];
+  
+  constructor() {}
+
+  ngOnInit(): void {}
 
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TrackModel } from '@core/models/Track.model';
 
 @Component({
   selector: 'app-media-player',
@@ -7,10 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './media-player.component.css'
 })
 export class MediaPlayerComponent {
-  mockCover: any = {
+  mockCover: TrackModel = {
     cover: 'https://media.senscritique.com/media/000004802973/300/demon_days.jpg',
     name: 'Demon Days',
-    album: 'Gorillaz'
+    album: 'Gorillaz',
+    url: 'https://localhost/track.mp3',
+    _id: 1
   }
 
   constructor() {}
