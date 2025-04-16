@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TrackModel } from '@core/models/Track.model';
+import { TrackModel } from '@core/models/track.model';
 
 @Component({
   selector: 'app-media-player',

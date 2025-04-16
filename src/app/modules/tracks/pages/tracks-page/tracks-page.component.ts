@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import * as dataRaw from "../../../../data/tracks.json"
-import { TrackModel } from '@core/models/Track.model';
+import { TrackModel } from '@core/models/track.model';
 
 @Component({
   selector: 'app-tracks-page',
